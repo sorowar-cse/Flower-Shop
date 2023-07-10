@@ -32,7 +32,8 @@
 
 /* Styles for Navigation Bar starts here*/
 .navbar {
-    background-color: #e78da0;
+    background-color: black;
+    /* #e78da0; */
     /* lightgray; */
 }
 
@@ -44,7 +45,8 @@ nav {
 }
 
 .nav-title {
-    color: #181818;
+    color: white;
+    /* #181818; */
     font-size: 45px;
     font-weight: 800;
 }
@@ -61,19 +63,19 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #474747;
+    color: white;
+    /* #474747; */
     font-size: 20px;
     font-weight: 600;
 }
 
 nav a:hover {
-    color: white
-        /* #E55473; */
+    color: #E55473;
 }
 
 /* Styles for Navigation Bar ends here*/
 
-/* Styles for Hero Section starts here*/
+/* Styles for Hero, some Offer, some contact Section starts here*/
 .hero {
     height: 100vh;
     margin-top: 0;
@@ -86,7 +88,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     padding: 0px 20px;
-    /* height: 100%; */
 }
 
 .hero-content h1 {
@@ -102,9 +103,10 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.hero-content a {
+.hero-content a,
+.offer-content a,
+.contact a {
     text-decoration: none;
-
     font-size: 20px;
     font-weight: 600;
     border: 2px solid #E55473;
@@ -114,7 +116,9 @@ nav a:hover {
     color: white;
 }
 
-.hero-content a:hover {
+.hero-content a:hover,
+.offer-content a:hover,
+.contact a:hover {
     color: #E55473;
     background-color: white;
 }
@@ -123,13 +127,6 @@ nav a:hover {
     padding: 0px;
     width: 50%;
 }
-
-/* .hero-content-right {
-    background-image: url('../Assets/pngwing\ 10.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right center;
-} */
 
 /* Styles for Hero Section ends here*/
 
@@ -179,3 +176,130 @@ nav a:hover {
     margin-bottom: 10px;
     text-decoration: underline;
 }
+
+/* Styles for Feature Section ends here*/
+
+/* Styles for Offer Section starts here*/
+.offers {
+    height: 620px;
+    margin-top: 0;
+    background: rgba(229, 84, 115, 0.10);
+}
+
+.offer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.offer-content h2 {
+    font-size: 54px;
+    font-weight: 700;
+    color: #181818;
+    margin-bottom: 0px;
+}
+
+.offer-description {
+    font-size: 18px;
+    color: #474747;
+    margin-bottom: 50px;
+}
+
+.offer-content .offer-image {
+    padding: 50px;
+    width: 30%;
+}
+
+/* Styles for Offer Section ends here*/
+
+/* Styles for Social Media Section starts here*/
+.socials-media {
+    padding: 100px 0px;
+}
+
+.social-media-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media .social-media-image {
+    width: 250px;
+    height: 300px;
+    padding: 50px 15px 50px;
+}
+
+/* Styles for Social Media Section ends here*/
+
+/* Styles for Contact Section starts here*/
+.contact {
+    background-image: url("../Assets/Rectangle\ 9.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% 100%;
+    margin-bottom: 150px;
+}
+
+.contact-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.contact input {
+    width: 35%;
+    padding: 10px 20px;
+    margin: 20px 20px 20px 0px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+/* Styles for Contact Section ends here*/
+
+/* Styles for Footer Section starts here*/
+footer {
+    color: white;
+    background-color: black;
+    padding: 100px 80px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(229, 84, 115, 0.6);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.footer-copy {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #757575;
+}
+/* Styles for Footer Section ends here*/
+
+
+
+
+
