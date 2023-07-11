@@ -1,7 +1,6 @@
 /* Shared or, Common styles for all pages */
 * {
     font-family: 'Lato', sans-serif;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -23,7 +22,7 @@
 .section-description {
     color: #757575;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -33,21 +32,21 @@
 /* Styles for Navigation Bar starts here*/
 .navbar {
     background-color: black;
-    /* #e78da0; */
-    /* lightgray; */
+    padding: 0px 20px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     margin: 0px 30px;
 }
 
 .nav-title {
     color: white;
-    /* #181818; */
-    font-size: 45px;
+    margin-right: 50px;
+    font-size: 40px;
     font-weight: 800;
 }
 
@@ -64,8 +63,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: white;
-    /* #474747; */
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -77,8 +75,8 @@ nav a:hover {
 
 /* Styles for Hero, some Offer, some contact Section starts here*/
 .hero {
-    height: 100vh;
-    margin-top: 0;
+    height: 89vh;
+    /* margin-top: 0; */
     background: rgba(229, 84, 115, 0.10);
 }
 
@@ -98,9 +96,9 @@ nav a:hover {
 }
 
 .hero-description {
-    font-size: 20px;
+    font-size: 16px;
     color: #474747;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .hero-content a,
@@ -124,15 +122,16 @@ nav a:hover {
 }
 
 .hero-content .hero-image {
-    padding: 0px;
-    width: 50%;
+    padding: 30px;
+    height: 85vh;
 }
 
 /* Styles for Hero Section ends here*/
 
 /* Styles for Feature Section starts here*/
 .features {
-    padding: 100px 0px;
+    padding: 60px 0px;
+    height: 100vh;
 }
 
 .features-grid {
@@ -146,31 +145,32 @@ nav a:hover {
 }
 
 #feature-a {
-    width: 300px;
-    height: 464px;
+    width: 200px;
+    height: 300px;
     padding: 50px 50px 0px;
     border-radius: 300px 300px 0px 0px;
     background: rgba(167, 33, 98, 0.15);
 }
 
 #feature-b {
-    width: 300px;
-    height: 464px;
+    width: 200px;
+    height: 300px;
+    ;
     padding: 50px 50px 0px;
     border-radius: 300px 300px 0px 0px;
     background: rgba(5, 151, 160, 0.15);
 }
 
 #feature-c {
-    width: 300px;
-    height: 464px;
+    width: 200px;
+    height: 300px;
     padding: 50px 30px 0px;
     border-radius: 300px 300px 0px 0px;
     background: rgba(71, 125, 17, 0.15);
 }
 
 .feature-title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: #181818;
     margin-bottom: 10px;
@@ -179,9 +179,28 @@ nav a:hover {
 
 /* Styles for Feature Section ends here*/
 
+/* Styles for Support Section starts here*/
+.supports {
+    /* width: 1440px;
+    height: 320px; */
+    margin: 150px;
+    padding: 60px 0px;
+    background: rgba(39, 39, 39, 0.05);
+}
+
+.supports-grid {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+/* Styles for Support Section ends here*/
+
 /* Styles for Offer Section starts here*/
 .offers {
-    height: 620px;
+    height: 80vh;
     margin-top: 0;
     background: rgba(229, 84, 115, 0.10);
 }
@@ -189,6 +208,7 @@ nav a:hover {
 .offer-content {
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -234,6 +254,64 @@ nav a:hover {
 
 /* Styles for Social Media Section ends here*/
 
+/* Styles for Product Section starts here*/
+.products {
+    height: 90vh;
+    padding: 80px 0px;
+    background: rgba(229, 84, 115, 0.10);
+}
+
+.products-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.product .product-image {
+    margin-top: 50px;
+    padding: 20px;
+    width: 33%;
+    border: 2px dotted #E55473;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #181818;
+}
+
+.product-title:hover {
+    color: #E55473;
+    font-weight: 800;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #474747;
+    margin-top: 2px;
+    margin-bottom: 25px;
+}
+
+.product a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    border: 2px solid #E55473;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #E55473;
+    color: white;
+}
+
+.product a:hover {
+    color: #E55473;
+    background-color: white;
+}
+
+/* Styles for Product Section ends here*/
+
 /* Styles for Contact Section starts here*/
 .contact {
     background-image: url("../Assets/Rectangle\ 9.png");
@@ -241,6 +319,7 @@ nav a:hover {
     background-position: center;
     background-size: 80% 100%;
     margin-bottom: 150px;
+    margin-top: 150px;
 }
 
 .contact-content {
@@ -257,6 +336,7 @@ nav a:hover {
     border: 2px solid white;
     border-radius: 5px;
 }
+
 /* Styles for Contact Section ends here*/
 
 /* Styles for Footer Section starts here*/
@@ -267,21 +347,21 @@ footer {
     text-align: center;
 }
 
-footer h2 {
-    font-size: 45px;
+.footer-title {
+    font-size: 54px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .footer-description {
-    font-size: 18px;
+    font-size: 16px;
     color: #757575;
     margin-bottom: 50px;
 }
 
 footer a {
     text-decoration: none;
-    color: rgba(229, 84, 115, 0.6);
+    color: rgba(226, 179, 189, 0.75);
     font-size: 20px;
     font-weight: 600;
     padding: 10px 20px;
@@ -295,11 +375,8 @@ footer a:hover {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 20px;
-    color: #757575;
+    /* color: #757575; */
+    color: #E2B3BD;
 }
+
 /* Styles for Footer Section ends here*/
-
-
-
-
-
